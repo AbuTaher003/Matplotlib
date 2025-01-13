@@ -117,7 +117,7 @@ plt.show()
 
 The following image illustrates the result of this code where two overlapping bar plots are created.
 
-![Bar Plot Example](./bar_plot_example.png)
+![Bar Plot Example](overlapbarplot.png)
 
 ---
 
