@@ -133,3 +133,67 @@ The following image illustrates the result of this code where two overlapping ba
 This basic guide explains how to create overlapping bar charts with `matplotlib`. Adjust the data and colors as needed to fit your requirements.
 
 ---
+# Solution of Overlapping Bar Charts with Matplotlib
+
+This example demonstrates how to avoid overlapping bar charts and create side by side multiple bar charts in a single frame in Matplotlib using `plt.bar()`.
+
+### Code
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = ["python", "C", "C++", "Java"]
+y = [35, 60, 45, 80]
+z = [30, 50, 40, 20]
+
+# Width of the bars
+width = 0.4
+
+# Bar positions
+p = np.arange(len(x))
+p1 = [j + width for j in p]
+
+# Plotting the bars
+plt.bar(p, y, color='r', width=0.4, label="Popularity")
+plt.bar(p1, z, color='y', width=0.4, label="Popularity1")
+
+# Adjusting x-axis labels
+plt.xticks(p + width / 2, x, rotation=20)
+
+# Adding labels and title
+plt.xlabel("Language", fontsize=15)
+plt.ylabel("No.", fontsize=15)
+plt.title("Popularity of Language", fontsize=20)
+
+# Adding legend
+plt.legend(loc='upper center')
+
+# Displaying the chart
+plt.show()
+```
+
+### Explanation
+1. **Libraries Imported**: We use `matplotlib.pyplot` for plotting and `numpy` for numerical calculations.
+2. **Data**:
+   - `x` contains the programming languages.
+   - `y` and `z` represent two sets of popularity values.
+3. **Width and Positions**:
+   - `width` sets the bar width.
+   - `p` calculates the base positions for the bars.
+   - `p1` shifts the second set of bars to overlap with the first set.
+4. **Plotting Bars**:
+   - `plt.bar()` creates the bars with specified colors (`red` and `yellow`) and labels.
+5. **X-axis Labels**: `plt.xticks()` adjusts the labels for better visibility.
+6. **Styling**:
+   - `xlabel` and `ylabel` add axis descriptions.
+   - `title` provides the chart title.
+   - `legend` shows the bar labels in a central location.
+7. **Show Plot**: `plt.show()` renders the chart.
+
+#### Picture:
+
+The following image illustrates the result of this code where two bar plots are created side by side.
+
+![Bar Plot Example]()
+
+---
