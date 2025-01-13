@@ -58,7 +58,7 @@ Below is the generated bar plot:
 
 ---
 
-### README for Bar Plot Example: Overlapping Bar Charts in Python
+### Bar Plot Example: Overlapping Bar Charts in Python
 
 ---
 
