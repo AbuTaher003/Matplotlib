@@ -194,6 +194,6 @@ plt.show()
 
 The following image illustrates the result of this code where two bar plots are created side by side.
 
-![Bar Plot Example]()
+![Bar Plot Example](sidebyside_barplot.png)
 
 ---
