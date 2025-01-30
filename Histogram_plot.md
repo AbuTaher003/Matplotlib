@@ -84,4 +84,3 @@ plt.show()
 
 ### Summary
 This histogram plot demonstrates various customization options available in Matplotlib. The combination of color, alignment, and grid options, along with additional features like cumulative frequency and vertical lines, makes it a powerful visualization tool. By tweaking the parameters, you can adapt the histogram to suit your data and presentation needs.
-
