@@ -1,5 +1,5 @@
 ## Stack and Area Plot
- 
+
 ```python
 import matplotlib.pyplot as plt
 
