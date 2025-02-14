@@ -26,7 +26,7 @@ plt.title("Stack Plot and Area plot")
 plt.show()
 ```
 
-### Notes :
+### Notes : 
 - The `colors` parameter accepts a list of colors corresponding to each area, e.g., `['r', 'g', 'm']`.
 - The `labels` parameter requires a list of labels for the areas, e.g., `["area1", "area2", "area3"]`.
 - `baseline="zero"` keeps the baseline at the zero level. Alternative options are:
