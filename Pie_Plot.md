@@ -1,4 +1,3 @@
-
 # Pie Chart Notes
 
 ## Introduction to Pie Chart
